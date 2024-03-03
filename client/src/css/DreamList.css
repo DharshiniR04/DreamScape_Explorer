@@ -1,0 +1,18 @@
+#dreamlist h2{
+   color: black;
+   font-size: 35px;
+   margin-top: 105px;
+   padding:0px 0px 20px 350px;
+}
+
+ul{
+    padding: 0px 0px  20px 250px;
+}
+
+li{
+    width: 850px;
+    list-style-type:upper-roman;
+    padding: 0px 0px 50px 0px;
+    font-size: 20px;
+
+}

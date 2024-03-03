@@ -1,0 +1,12 @@
+#signbox{
+    width: 500px;
+    height: 250px;
+    margin:200px 0px 0px 485px;
+    border: 1px solid #7a7878;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#email{
+    margin-top: 150px;
+}
+

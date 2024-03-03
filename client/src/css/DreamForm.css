@@ -1,0 +1,28 @@
+#dream-form{
+    padding-top: 140px;
+}
+
+label{
+    color: black;
+    padding: 0px 0px 50px 80px;
+    height: 15px;
+}
+
+input{
+
+    margin: 10px 0px 10px 80px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 350px;
+    height: 40px;
+    text-indent: 8px;
+}
+
+textarea{
+    margin-top: 10px;
+    margin-left: 150px;
+   width: 450px;
+   height: 250px;
+   text-indent: 5px;
+}
+

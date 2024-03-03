@@ -1,0 +1,19 @@
+#Nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0px 20px 80px;
+    width: 1850px;
+    background-color: rgb(152,104,208);
+    top:0;
+    position: fixed;
+}
+
+#Nav>h1{
+    padding-right: 520px;
+}
+
+
+#Nav button{
+    margin-left: 15px;
+}

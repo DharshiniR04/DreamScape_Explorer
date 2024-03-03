@@ -1,0 +1,23 @@
+#modal{
+    padding-top: 120px;
+}
+
+label{
+    color: black;
+}
+
+input{
+    margin-left: 10px;
+}
+
+textarea{
+    margin-top: 10px;
+    margin-left: 150px;
+   width: 450px;
+   height: 250px;
+   text-indent: 5px;
+}
+
+#dream-info{
+    padding-top: 0px;
+}
