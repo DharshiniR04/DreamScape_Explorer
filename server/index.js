@@ -7,15 +7,11 @@ const bcrypt = require('bcrypt');
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-
-app.use(cors(
-    {
-        origin: ["https://dreamscape-explorer-ux95.vercel.app"],
-        methods: ["POST", "GET"],
-        credentials: true
-    }
-));
+app.use(cors({
+  origin: ["https://dreamscape-explorer-ux95.vercel.app"],
+  methods: ["POST", "GET"],
+  credentials: true
+}));
 
 app.get("/",(req,res)=>{
     res.json("Hello");
