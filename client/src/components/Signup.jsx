@@ -18,7 +18,7 @@ function Signup() {
   const handleAccount=async(event)=> {
     event.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/signup", {
+      const response = await axios.post("https://dreamscape-explorer.vercel.app/signup", {
         name:name,
         dob:dob,
         phone:phone,
