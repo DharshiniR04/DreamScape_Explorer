@@ -16,7 +16,7 @@ function DreamList(Email) {
       const fetchDreams = async () => {
         try {
           console.log("Email:", email);  
-          const response = await axios.post("http://localhost:5000/dreams", { email });
+          const response = await axios.post("https://dreamscape-explorer.vercel.app/dreams", { email });
           console.log(response);
           setDreams(response.data);
         } catch (error) {
