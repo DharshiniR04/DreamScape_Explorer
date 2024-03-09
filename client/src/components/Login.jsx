@@ -9,6 +9,8 @@ function Login({ onGetEmail }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  axios.defaults.withCredentials = true;
+
   const handleLogin = async (event) => {
     event.preventDefault();
 

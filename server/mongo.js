@@ -1,11 +1,17 @@
-const mongoose=require("mongoose");
-mongoose.connect("mongodb+srv://dharshinirajaram48:dharshini@cluster0.wqmma6r.mongodb.net/dreamscape")
-.then(()=>{
-    console.log("connected!");
-})
-.catch(()=>{
-    console.log("Not Connected!");
-})
+const mongoose = require("mongoose");
+require("dotenv").config();
+
+const mongoURI = process.env.MONGO_URI;
+
+mongoose
+  .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => {
+    console.log("Connected to MongoDB!");
+  })
+  .catch((error) => {
+    console.error("Error connecting to MongoDB:", error.message);
+  });
+
 
 const newSchema = new mongoose.Schema({
     name:{

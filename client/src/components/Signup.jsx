@@ -13,6 +13,8 @@ function Signup() {
   const[phone,setPhone]=useState("");
   const [pass, setPass] = useState("");
 
+  axios.defaults.withCredentials = true;
+
   const handleAccount=async(event)=> {
     event.preventDefault();
     try {
@@ -24,7 +26,7 @@ function Signup() {
         password: pass,
       });
       if (response.status === 200) {
-        navigate("../signup");
+        navigate("../list");
         console.log("Success");
       } else {
         console.log("Authentication failed");

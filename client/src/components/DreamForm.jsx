@@ -8,6 +8,9 @@ function DreamForm( Email ) {
   useEffect(()=>{
     setEmail(Email.Email.email);
  },[email]);
+
+ axios.defaults.withCredentials = true;
+
   const handleInputSubmit = async (event) => {
   event.preventDefault();
   console.log("hi");

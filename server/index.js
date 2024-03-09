@@ -9,6 +9,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
+// app.use(cors(
+//     {
+//         origin: ["https://dreamscape-explorer.vercel.app"],
+//         methods: ["POST", "GET"],
+//         credentials: true
+//     }
+// ));
 
 app.post("/signup", async (req, res) => {
   const { name, dob, phone, email, password } = req.body;
