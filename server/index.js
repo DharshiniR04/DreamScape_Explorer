@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(cors(
     {
-        origin: ["https://dreamscape-explorer.vercel.app"],
+        origin: ["https://dreamscape-explorer-ux95.vercel.app"],
         methods: ["POST", "GET"],
         credentials: true
     }
