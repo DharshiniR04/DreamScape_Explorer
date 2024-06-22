@@ -10,7 +10,7 @@ function DreamList(Email) {
       setEmail(Email.Email.email);
     },[email]);
 
-    axios.defaults.withCredentials = true;
+    // axios.defaults.withCredentials = true;
 
     useEffect(() => {
       const fetchDreams = async () => {

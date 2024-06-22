@@ -13,7 +13,7 @@ function Signup() {
   const[phone,setPhone]=useState("");
   const [pass, setPass] = useState("");
 
-  axios.defaults.withCredentials = true;
+  // axios.defaults.withCredentials = true;
 
   const handleAccount=async(event)=> {
     event.preventDefault();

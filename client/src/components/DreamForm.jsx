@@ -9,7 +9,7 @@ function DreamForm( Email ) {
     setEmail(Email.Email.email);
  },[email]);
 
- axios.defaults.withCredentials = true;
+//  axios.defaults.withCredentials = true;
 
   const handleInputSubmit = async (event) => {
   event.preventDefault();
