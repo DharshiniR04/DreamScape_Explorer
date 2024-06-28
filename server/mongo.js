@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
 
-const mongoURI = "mongodb+srv://dharshinirajaram48:dharshini@cluster0.wqmma6r.mongodb.net/dreamscape";
+const mongoURI = process.env.MONGO_URI;
 
 mongoose
   .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
