@@ -11,7 +11,7 @@ app.use(cors({
   origin: ["https://dreamscape-bay.vercel.app/"],
   methods: ["POST", "GET"],
   credentials: true
-}));
+})); 
 
 app.get("/",(req,res)=>{
     res.json("Hello");
