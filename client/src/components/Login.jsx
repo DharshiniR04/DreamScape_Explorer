@@ -15,7 +15,7 @@ function Login({ onGetEmail }) {
     event.preventDefault();
 
     try {
-      const response = await axios.post('https://dreamscape-explorer.vercel.app/login', { email, password });
+      const response = await axios.post('https://dreamscape-explorer-server.vercel.app/login', { email, password });
       if (response.data === "Success") {
         alert("Authentication success");
         onGetEmail(email);
