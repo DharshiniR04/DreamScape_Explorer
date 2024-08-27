@@ -26,7 +26,7 @@ function Signup() {
         password: pass,
       });
       if (response.status === 200) {
-        navigate("../list");
+        navigate("../login");
         console.log("Success");
       } else {
         console.log("Authentication failed");
