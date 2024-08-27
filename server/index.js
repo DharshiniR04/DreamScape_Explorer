@@ -8,10 +8,19 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-  origin: ["https://dreamscape-explorer-client.vercel.app/"],
+  origin: "https://dreamscape-explorer-client.vercel.app", 
   methods: ["POST", "GET"],
   credentials: true
-})); 
+}));
+
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "https://dreamscape-explorer-client.vercel.app");
+  res.header("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+  res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  res.header("Access-Control-Allow-Credentials", "true");
+  next();
+});
+
 
 app.get("/",(req,res)=>{
     res.json("Hello");
