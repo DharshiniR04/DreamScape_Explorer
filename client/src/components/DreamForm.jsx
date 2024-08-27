@@ -15,7 +15,7 @@ function DreamForm( Email ) {
   event.preventDefault();
   console.log("hi");
     try {
-      const response = await axios.post("https://dreamscape-explorer.vercel.app/dream", {
+      const response = await axios.post("https://dreamscape-explorer-server.vercel.app/dream", {
         email:email,
         name: dreamInfo.name,
         date: dreamInfo.date,
