@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-  origin: ["https://dreamscape-seven.vercel.app/"],
+  origin: ["https://dreamscape-explorer-client.vercel.app/"],
   methods: ["POST", "GET"],
   credentials: true
 })); 
